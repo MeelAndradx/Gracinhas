@@ -13,7 +13,6 @@ body {
     justify-content: center;
 }
 
-
 body::before {
     background-image: url("img/code.png");
     background-repeat: no-repeat;
@@ -25,6 +24,51 @@ body::before {
     height: 100%;
     opacity: 0.4;
 }
+
+body::before {
+    background-image: url("img/bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+body::before {
+    background-image: url("img/robot.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+body::before {
+    background-image: url("img/Ruido.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+body::before {
+    background-image: url("img/trophy.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 
 .container {
     width: 1200px;
@@ -40,14 +84,14 @@ body::before {
     position: relative;
 }
 
-.container__conteudo {
+.container__conteudo{
     display: flex;
     align-items: center;
     position: absolute;
     bottom: 0;
 }
 
-.container__informacoes {
+.container__informacoes::after {
     flex: 1;
     padding: 20px;
 }
@@ -63,7 +107,7 @@ body::before {
     margin-top: 16px;
 }
 
-.container__texto {
+.container__texto::after {
     margin: 16px 0 16px 0;
 }
 
@@ -71,7 +115,7 @@ body::before {
     color: #1875E8;
 }
 
-h1 {
+h1{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 72px;
 }
